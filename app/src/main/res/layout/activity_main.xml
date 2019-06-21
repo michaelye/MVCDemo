@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    tools:context=".controller.MainActivity">
+
+    <TextView
+        android:id="@+id/tvTemperatureAndWindLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:layout_centerInParent="true"/>
+
+    <SeekBar
+        android:id="@+id/sbTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tvTemperatureAndWindLevel"
+        android:min="20"
+        android:max="30"/>
+
+    <Button
+        android:id="@+id/btnChangeWindLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/sbTemperature"
+        android:text="设置风力"/>
+
+</RelativeLayout>
